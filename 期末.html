@@ -12,6 +12,40 @@
       background-color: #f4f4f9;
       color: #333;
     }
+    
+    /* 導航欄樣式  */
+    nav {
+      background-color: #333;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      float: left;
+    }
+    nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    nav li a:hover {
+      background-color: #111;
+    }
+    nav li a.active {
+      background-color: #4e54c8;
+    }
+
     .cover {
       background: linear-gradient(to right, #76a3f5, #454aad);
       color: white;
@@ -33,6 +67,7 @@
     }
     section {
       margin-bottom: 40px;
+      scroll-margin-top: 60px; 
     }
     section h2 {
       color: #4e54c8;
@@ -49,8 +84,18 @@
 </head>
 <body>
 
+  <!-- 導航欄 -->
+  <nav>
+    <ul>
+      <li><a href="#section0">封面</a></li>
+      <li><a href="#section1">成果展示</a></li>
+      <li><a href="#section2">學習過程</a></li>
+      <li><a href="#section3">心得與反思</a></li>
+    </ul>
+  </nav>
+
   <!-- 封面區 -->
-  <div class="cover">
+  <div class="cover" id="section0">
     <h1>課程報告</h1>
     <p>課程名稱:基礎網頁設計</p>
     <p>學生姓名:黃煜庭</p>
@@ -58,33 +103,25 @@
     <p>指導老師:劉毓芬</p>
     <p>日    期:2025年6月5日</p>
   </div>
-  <!-- 導航欄 -->
-  <nav>
-    <ul>
-      <li><a href="#section1">成果展示</a></li>
-      <li><a href="#section2">學習過程</a></li>
-      <li><a href="#section3">心得與反思</a></li>
-    </ul>
-  </nav>
 
   <!-- 內容區 -->
   <div class="content">
 
-    <section>
+    <section id="section1">
       <h2>一、成果展示</h2>
        <img src="1.jpg" alt="html" style="max-width: 100%;">
        <img src="2.jpg" alt="呈現" style="max-width: 100%;">
-    </section>
+    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <section>
+    <section id="section2">
       <h2>二、學習過程</h2>
-      <p>一開始連html是什麼都不知道 到現在有會一點點 遇到不會的就問ChatGPT或DeepSeek 雖然都會跟老師的不太一樣 但有做比沒做好</p>
-    </section>
+      <p>一開始連html是什麼都不知道 完全無法理解那些括號和英文單字的組合到底代表什麼 <br>到現在有會一點點 遇到不會的就問ChatGPT或DeepSeek <br>雖然會和老師的不一樣 但至少不是空白 </p><br><br><br><br><br><br>
+    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <section>
+    <section id="section3">
       <h2>三、心得與反思</h2>
-      <p>我只會照著老師的程式碼打  沒有得看就不會了  應該要再加油</p>
-    </section>
+      <p>我發現自己過度依賴老師提供的範例程式碼<br>往往只是機械式地照著打一遍 而沒有真正理解每個標籤和屬性的意義與作用<br>當需要獨立完成作業或面對新的網頁設計需求時 常常感到手足無措 腦中一片空白 不知道該從何下手<br>老師也說過只會照著她的範例打 學不到東西 要自己去理解意思才有用<br>讓我體會到學習新技術需要時間和耐心</p>
+    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   </div>
 
